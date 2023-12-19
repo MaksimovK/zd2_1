@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInScreen"
+    android:background="@color/background_screens"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_boxedEdges="all">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingTop="25dp"
+                    android:src="@drawable/world_cinema_text"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_mail"
+                    android:textColor="@color/blue_color"
+                    android:textSize="10sp"
+                    android:paddingTop="17dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="21dp"
+                    android:paddingEnd="21dp">
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/you_example_com"
+                        android:textColorHint="@color/hint_gray"
+                        android:layout_marginTop="-8dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="12sp"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/blue_color"
+                        android:autofillHints="emailAddress" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textColor="@color/blue_color"
+                    android:textSize="10sp"
+                    android:paddingTop="5dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="21dp"
+                    android:paddingEnd="21dp">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/your_password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/hint_gray"
+                        android:layout_marginTop="-8dp"
+                        android:textSize="12sp"
+                        android:maxLines="1"
+                        android:backgroundTint="@color/blue_color"
+                        android:autofillHints="password" />
+
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_radius_zero"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/sign_in"/>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>

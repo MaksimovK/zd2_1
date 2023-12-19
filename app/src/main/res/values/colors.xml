@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_launch_screen">#150D0B</color>
+    <color name="background_screens">#000000</color>
+    <color name="blue_color">#2B70A8</color>
+    <color name="hint_gray">#6B6B6B</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

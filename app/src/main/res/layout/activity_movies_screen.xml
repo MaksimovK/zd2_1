@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MoviesScreen"
+    android:background="@color/background_screens"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_boxedEdges="all">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_new"
+                android:layout_gravity="center"
+                android:textColor="@color/blue_color"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="102dp">
+
+                <ImageView
+                    android:id="@+id/rectangleImageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6.5dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_marginEnd="6.5dp"
+                    android:layout_marginBottom="6.5dp" />
+
+                <ImageView
+                    android:id="@+id/playVideoImageView1"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="67dp"
+                    android:layout_marginTop="33dp"
+                    android:visibility="visible"
+                    android:src="@drawable/play_button_ico" />
+
+                <TextView
+                    android:id="@+id/ImageText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/rectangleImageView1"
+                    android:layout_alignBottom="@+id/rectangleImageView1"
+                    android:textSize="13.2sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="102dp">
+
+                <ImageView
+                    android:id="@+id/rectangleImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6.5dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_marginEnd="6.5dp"
+                    android:layout_marginBottom="6.5dp" />
+
+                <ImageView
+                    android:id="@+id/playVideoImageView2"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="67dp"
+                    android:layout_marginTop="33dp"
+                    android:visibility="visible"
+                    android:src="@drawable/play_button_ico" />
+
+                <TextView
+                    android:id="@+id/ImageText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/rectangleImageView2"
+                    android:layout_alignBottom="@+id/rectangleImageView2"
+                    android:textSize="13.2sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="102dp">
+
+                <ImageView
+                    android:id="@+id/rectangleImageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6.5dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_marginEnd="6.5dp"
+                    android:layout_marginBottom="6.5dp" />
+
+                <ImageView
+                    android:id="@+id/playVideoImageView3"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="67dp"
+                    android:layout_marginTop="33dp"
+                    android:visibility="visible"
+                    android:src="@drawable/play_button_ico" />
+
+                <TextView
+                    android:id="@+id/ImageText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/rectangleImageView3"
+                    android:layout_alignBottom="@+id/rectangleImageView3"
+                    android:textSize="13.2sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>
